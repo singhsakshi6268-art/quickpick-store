@@ -1,0 +1,9 @@
+{
+  "name": "quickpick-store",
+  "private": true,
+  "scripts": {
+    "cert:dev": "powershell -ExecutionPolicy Bypass -File scripts/generate-dev-cert.ps1",
+    "dev": "node server.js",
+    "start": "node server.js"
+  }
+}

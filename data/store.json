@@ -1,0 +1,1121 @@
+{
+  "defaultProducts": {
+    "products": [
+      {
+        "id": 1,
+        "name": "Wireless Bluetooth Headphones",
+        "category": "electronics",
+        "price": 1999,
+        "originalPrice": 3999,
+        "rating": 0,
+        "reviews": 0,
+        "stock": "In Stock",
+        "image": "",
+        "description": "High-quality wireless headphones with noise cancellation and 30-hour battery life.",
+        "features": [
+          "Noise Cancellation",
+          "30-hour battery",
+          "Bluetooth 5.0",
+          "Built-in microphone"
+        ],
+        "specs": [
+          [
+            "Color",
+            "Black"
+          ],
+          [
+            "Battery",
+            "30 hours"
+          ],
+          [
+            "Connectivity",
+            "Bluetooth 5.0"
+          ]
+        ],
+        "paymentOffers": {
+          "creditCard": "10% off up to Rs.750",
+          "debitCard": "5% off up to Rs.400",
+          "upi": "Flat Rs.100 cashback",
+          "cod": "No extra fee"
+        },
+        "imageUrl": "/api/uploads/c186347d17eaddc4a07406f4ed37c9ae.png",
+        "imageGallery": [
+          "/api/uploads/c186347d17eaddc4a07406f4ed37c9ae.png"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Smart Watch Pro",
+        "category": "electronics",
+        "price": 4999,
+        "originalPrice": 8999,
+        "rating": 0,
+        "reviews": 0,
+        "stock": "In Stock",
+        "image": "",
+        "description": "Advanced smartwatch with fitness tracking and 7-day battery life.",
+        "features": [
+          "Heart Rate Monitor",
+          "GPS",
+          "Fitness Tracking",
+          "Sleep Monitoring"
+        ],
+        "specs": [
+          [
+            "Display",
+            "1.4\" AMOLED"
+          ],
+          [
+            "Battery",
+            "7 days"
+          ],
+          [
+            "Water Resistance",
+            "5ATM"
+          ]
+        ],
+        "paymentOffers": {
+          "creditCard": "10% off up to Rs.750",
+          "debitCard": "5% off up to Rs.400",
+          "upi": "Flat Rs.100 cashback",
+          "cod": "No extra fee"
+        },
+        "imageUrl": "/api/uploads/5fa1f4d024a6a2b2cae7bad3324d6799.png",
+        "imageGallery": [
+          "/api/uploads/5fa1f4d024a6a2b2cae7bad3324d6799.png"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "USB-C Fast Charger",
+        "category": "electronics",
+        "price": 499,
+        "originalPrice": 999,
+        "rating": 0,
+        "reviews": 0,
+        "stock": "In Stock",
+        "image": "",
+        "description": "65W USB-C fast charger compatible with all devices.",
+        "features": [
+          "65W Power",
+          "Fast Charging",
+          "Compact",
+          "Multiple Device Support"
+        ],
+        "specs": [
+          [
+            "Output",
+            "65W"
+          ],
+          [
+            "Ports",
+            "2x USB-C"
+          ],
+          [
+            "Input",
+            "100-240V"
+          ]
+        ],
+        "paymentOffers": {
+          "creditCard": "10% off up to Rs.750",
+          "debitCard": "5% off up to Rs.400",
+          "upi": "Flat Rs.100 cashback",
+          "cod": "No extra fee"
+        },
+        "imageUrl": "/api/uploads/f9ae050ead5fa13f9aa40a0834b0c637.png",
+        "imageGallery": [
+          "/api/uploads/f9ae050ead5fa13f9aa40a0834b0c637.png"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Premium T-Shirt",
+        "category": "fashion",
+        "price": 749,
+        "originalPrice": 1499,
+        "rating": 0,
+        "reviews": 0,
+        "stock": "In Stock",
+        "image": "",
+        "description": "Comfortable 100% cotton premium T-shirt in multiple colors.",
+        "features": [
+          "100% Cotton",
+          "Comfortable",
+          "Breathable",
+          "Durable"
+        ],
+        "specs": [
+          [
+            "Material",
+            "100% Cotton"
+          ],
+          [
+            "Sizes",
+            "XS-XXL"
+          ],
+          [
+            "Colors",
+            "Multiple"
+          ]
+        ],
+        "paymentOffers": {
+          "creditCard": "10% off up to Rs.750",
+          "debitCard": "5% off up to Rs.400",
+          "upi": "Flat Rs.100 cashback",
+          "cod": "No extra fee"
+        },
+        "imageUrl": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23c2185b%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3EPremium%20T-Shirt%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "imageGallery": [
+          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23c2185b%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3EPremium%20T-Shirt%3C%2Ftext%3E%3C%2Fsvg%3E"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Stylish Jacket",
+        "category": "fashion",
+        "price": 2499,
+        "originalPrice": 4999,
+        "rating": 0,
+        "reviews": 0,
+        "stock": "In Stock",
+        "image": "",
+        "description": "Modern stylish jacket perfect for all seasons.",
+        "features": [
+          "Water Resistant",
+          "Warm Lining",
+          "Multiple Pockets",
+          "Stylish"
+        ],
+        "specs": [
+          [
+            "Material",
+            "Polyester"
+          ],
+          [
+            "Sizes",
+            "S-XXL"
+          ],
+          [
+            "Colors",
+            "Multiple"
+          ]
+        ],
+        "paymentOffers": {
+          "creditCard": "10% off up to Rs.750",
+          "debitCard": "5% off up to Rs.400",
+          "upi": "Flat Rs.100 cashback",
+          "cod": "No extra fee"
+        },
+        "imageUrl": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%236d4c41%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3EStylish%20Jacket%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "imageGallery": [
+          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%236d4c41%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3EStylish%20Jacket%3C%2Ftext%3E%3C%2Fsvg%3E"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Running Shoes",
+        "category": "fashion",
+        "price": 2999,
+        "originalPrice": 5999,
+        "rating": 0,
+        "reviews": 0,
+        "stock": "In Stock",
+        "image": "",
+        "description": "Professional running shoes with cushioning technology.",
+        "features": [
+          "Cushioning",
+          "Breathable",
+          "Lightweight",
+          "Ergonomic"
+        ],
+        "specs": [
+          [
+            "Material",
+            "Mesh + Rubber"
+          ],
+          [
+            "Sizes",
+            "5-14"
+          ],
+          [
+            "Colors",
+            "Multiple"
+          ]
+        ],
+        "paymentOffers": {
+          "creditCard": "10% off up to Rs.750",
+          "debitCard": "5% off up to Rs.400",
+          "upi": "Flat Rs.100 cashback",
+          "cod": "No extra fee"
+        },
+        "imageUrl": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23ffa000%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3ERunning%20Shoes%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "imageGallery": [
+          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23ffa000%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3ERunning%20Shoes%3C%2Ftext%3E%3C%2Fsvg%3E"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Non-Stick Cookware Set",
+        "category": "home",
+        "price": 3499,
+        "originalPrice": 7999,
+        "rating": 0,
+        "reviews": 0,
+        "stock": "In Stock",
+        "image": "",
+        "description": "Premium non-stick cookware set with 5 pieces.",
+        "features": [
+          "Non-Stick",
+          "Heat Resistant",
+          "Durable",
+          "Induction Ready"
+        ],
+        "specs": [
+          [
+            "Pieces",
+            "5"
+          ],
+          [
+            "Material",
+            "Aluminum"
+          ],
+          [
+            "Heat Resistance",
+            "400F"
+          ]
+        ],
+        "paymentOffers": {
+          "creditCard": "10% off up to Rs.750",
+          "debitCard": "5% off up to Rs.400",
+          "upi": "Flat Rs.100 cashback",
+          "cod": "No extra fee"
+        },
+        "imageUrl": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23d32f2f%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3ENon-Stick%20Cookware%20Set%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "imageGallery": [
+          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23d32f2f%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3ENon-Stick%20Cookware%20Set%3C%2Ftext%3E%3C%2Fsvg%3E"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Kitchen Knife Set",
+        "category": "home",
+        "price": 999,
+        "originalPrice": 2499,
+        "rating": 0,
+        "reviews": 0,
+        "stock": "In Stock",
+        "image": "",
+        "description": "Professional kitchen knife set with 6 pieces.",
+        "features": [
+          "Stainless Steel",
+          "Sharp Blades",
+          "Comfortable",
+          "Wood Stand Included"
+        ],
+        "specs": [
+          [
+            "Pieces",
+            "6"
+          ],
+          [
+            "Material",
+            "Stainless Steel"
+          ],
+          [
+            "Warranty",
+            "Lifetime"
+          ]
+        ],
+        "paymentOffers": {
+          "creditCard": "10% off up to Rs.750",
+          "debitCard": "5% off up to Rs.400",
+          "upi": "Flat Rs.100 cashback",
+          "cod": "No extra fee"
+        },
+        "imageUrl": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23455a64%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3EKitchen%20Knife%20Set%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "imageGallery": [
+          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23455a64%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3EKitchen%20Knife%20Set%3C%2Ftext%3E%3C%2Fsvg%3E"
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Coffee Maker",
+        "category": "home",
+        "price": 2799,
+        "originalPrice": 5999,
+        "rating": 0,
+        "reviews": 0,
+        "stock": "In Stock",
+        "image": "",
+        "description": "Automatic coffee maker with programmable features.",
+        "features": [
+          "Programmable",
+          "Auto Shut-off",
+          "Keep Warm",
+          "Easy Brewing"
+        ],
+        "specs": [
+          [
+            "Capacity",
+            "1.5L"
+          ],
+          [
+            "Power",
+            "1000W"
+          ],
+          [
+            "Filter",
+            "Reusable"
+          ]
+        ],
+        "paymentOffers": {
+          "creditCard": "10% off up to Rs.750",
+          "debitCard": "5% off up to Rs.400",
+          "upi": "Flat Rs.100 cashback",
+          "cod": "No extra fee"
+        },
+        "imageUrl": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%235d4037%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3ECoffee%20Maker%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "imageGallery": [
+          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%235d4037%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3ECoffee%20Maker%3C%2Ftext%3E%3C%2Fsvg%3E"
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Programming Basics Book",
+        "category": "books",
+        "price": 349,
+        "originalPrice": 599,
+        "rating": 0,
+        "reviews": 0,
+        "stock": "In Stock",
+        "image": "",
+        "description": "Complete guide to programming fundamentals.",
+        "features": [
+          "Easy to Understand",
+          "Practical Examples",
+          "Exercises",
+          "Beginner Friendly"
+        ],
+        "specs": [
+          [
+            "Pages",
+            "450"
+          ],
+          [
+            "Language",
+            "English"
+          ],
+          [
+            "Author",
+            "Tech Academy"
+          ]
+        ],
+        "paymentOffers": {
+          "creditCard": "10% off up to Rs.750",
+          "debitCard": "5% off up to Rs.400",
+          "upi": "Flat Rs.100 cashback",
+          "cod": "No extra fee"
+        },
+        "imageUrl": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23303f9f%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3EProgramming%20Basics%20Book%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "imageGallery": [
+          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23303f9f%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3EProgramming%20Basics%20Book%3C%2Ftext%3E%3C%2Fsvg%3E"
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Web Development Guide",
+        "category": "books",
+        "price": 499,
+        "originalPrice": 899,
+        "rating": 0,
+        "reviews": 0,
+        "stock": "In Stock",
+        "image": "",
+        "description": "Master HTML, CSS, and JavaScript with this comprehensive guide.",
+        "features": [
+          "Complete Coverage",
+          "Project Based",
+          "Code Examples",
+          "Modern"
+        ],
+        "specs": [
+          [
+            "Pages",
+            "600"
+          ],
+          [
+            "Language",
+            "English"
+          ],
+          [
+            "Edition",
+            "3rd"
+          ]
+        ],
+        "paymentOffers": {
+          "creditCard": "10% off up to Rs.750",
+          "debitCard": "5% off up to Rs.400",
+          "upi": "Flat Rs.100 cashback",
+          "cod": "No extra fee"
+        },
+        "imageUrl": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%231976d2%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3EWeb%20Development%20Guide%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "imageGallery": [
+          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%231976d2%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3EWeb%20Development%20Guide%3C%2Ftext%3E%3C%2Fsvg%3E"
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Self-Help Book",
+        "category": "books",
+        "price": 299,
+        "originalPrice": 599,
+        "rating": 0,
+        "reviews": 0,
+        "stock": "In Stock",
+        "image": "",
+        "description": "Transform your life with proven strategies and techniques.",
+        "features": [
+          "Practical Tips",
+          "Life Changing",
+          "Motivational",
+          "Action Plans"
+        ],
+        "specs": [
+          [
+            "Pages",
+            "320"
+          ],
+          [
+            "Language",
+            "English"
+          ],
+          [
+            "Author",
+            "Life Coach"
+          ]
+        ],
+        "paymentOffers": {
+          "creditCard": "10% off up to Rs.750",
+          "debitCard": "5% off up to Rs.400",
+          "upi": "Flat Rs.100 cashback",
+          "cod": "No extra fee"
+        },
+        "imageUrl": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23388e3c%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3ESelf-Help%20Book%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "imageGallery": [
+          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23388e3c%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3ESelf-Help%20Book%3C%2Ftext%3E%3C%2Fsvg%3E"
+        ]
+      }
+    ],
+    "updatedAt": "2026-05-18T14:44:49.537Z"
+  },
+  "products": {
+    "products": [
+      {
+        "id": 1,
+        "name": "Wireless Bluetooth Headphones",
+        "category": "electronics",
+        "price": 1999,
+        "originalPrice": 3999,
+        "rating": 0,
+        "reviews": 0,
+        "stock": "In Stock",
+        "image": "",
+        "description": "High-quality wireless headphones with noise cancellation and 30-hour battery life.",
+        "features": [
+          "Noise Cancellation",
+          "30-hour battery",
+          "Bluetooth 5.0",
+          "Built-in microphone"
+        ],
+        "specs": [
+          [
+            "Color",
+            "Black"
+          ],
+          [
+            "Battery",
+            "30 hours"
+          ],
+          [
+            "Connectivity",
+            "Bluetooth 5.0"
+          ]
+        ],
+        "paymentOffers": {
+          "creditCard": "10% off up to Rs.750",
+          "debitCard": "5% off up to Rs.400",
+          "upi": "Flat Rs.100 cashback",
+          "cod": "No extra fee"
+        },
+        "imageUrl": "/api/uploads/c186347d17eaddc4a07406f4ed37c9ae.png",
+        "imageGallery": [
+          "/api/uploads/c186347d17eaddc4a07406f4ed37c9ae.png"
+        ],
+        "updatedAt": "2026-05-18T16:49:34.549Z"
+      },
+      {
+        "id": 2,
+        "name": "Smart Watch Pro",
+        "category": "electronics",
+        "price": 4999,
+        "originalPrice": 8999,
+        "rating": 0,
+        "reviews": 0,
+        "stock": "In Stock",
+        "image": "",
+        "description": "Advanced smartwatch with fitness tracking and 7-day battery life.",
+        "features": [
+          "Heart Rate Monitor",
+          "GPS",
+          "Fitness Tracking",
+          "Sleep Monitoring"
+        ],
+        "specs": [
+          [
+            "Display",
+            "1.4\" AMOLED"
+          ],
+          [
+            "Battery",
+            "7 days"
+          ],
+          [
+            "Water Resistance",
+            "5ATM"
+          ]
+        ],
+        "paymentOffers": {
+          "creditCard": "10% off up to Rs.750",
+          "debitCard": "5% off up to Rs.400",
+          "upi": "Flat Rs.100 cashback",
+          "cod": "No extra fee"
+        },
+        "imageUrl": "/api/uploads/5fa1f4d024a6a2b2cae7bad3324d6799.png",
+        "imageGallery": [
+          "/api/uploads/5fa1f4d024a6a2b2cae7bad3324d6799.png"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "USB-C Fast Charger",
+        "category": "electronics",
+        "price": 499,
+        "originalPrice": 999,
+        "rating": 0,
+        "reviews": 0,
+        "stock": "In Stock",
+        "image": "",
+        "description": "65W USB-C fast charger compatible with all devices.",
+        "features": [
+          "65W Power",
+          "Fast Charging",
+          "Compact",
+          "Multiple Device Support"
+        ],
+        "specs": [
+          [
+            "Output",
+            "65W"
+          ],
+          [
+            "Ports",
+            "2x USB-C"
+          ],
+          [
+            "Input",
+            "100-240V"
+          ]
+        ],
+        "paymentOffers": {
+          "creditCard": "10% off up to Rs.750",
+          "debitCard": "5% off up to Rs.400",
+          "upi": "Flat Rs.100 cashback",
+          "cod": "No extra fee"
+        },
+        "imageUrl": "/api/uploads/f9ae050ead5fa13f9aa40a0834b0c637.png",
+        "imageGallery": [
+          "/api/uploads/f9ae050ead5fa13f9aa40a0834b0c637.png"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Premium T-Shirt",
+        "category": "fashion",
+        "price": 749,
+        "originalPrice": 1499,
+        "rating": 0,
+        "reviews": 0,
+        "stock": "In Stock",
+        "image": "",
+        "description": "Comfortable 100% cotton premium T-shirt in multiple colors.",
+        "features": [
+          "100% Cotton",
+          "Comfortable",
+          "Breathable",
+          "Durable"
+        ],
+        "specs": [
+          [
+            "Material",
+            "100% Cotton"
+          ],
+          [
+            "Sizes",
+            "XS-XXL"
+          ],
+          [
+            "Colors",
+            "Multiple"
+          ]
+        ],
+        "paymentOffers": {
+          "creditCard": "10% off up to Rs.750",
+          "debitCard": "5% off up to Rs.400",
+          "upi": "Flat Rs.100 cashback",
+          "cod": "No extra fee"
+        },
+        "imageUrl": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23c2185b%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3EPremium%20T-Shirt%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "imageGallery": [
+          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23c2185b%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3EPremium%20T-Shirt%3C%2Ftext%3E%3C%2Fsvg%3E"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Stylish Jacket",
+        "category": "fashion",
+        "price": 2499,
+        "originalPrice": 4999,
+        "rating": 0,
+        "reviews": 0,
+        "stock": "In Stock",
+        "image": "",
+        "description": "Modern stylish jacket perfect for all seasons.",
+        "features": [
+          "Water Resistant",
+          "Warm Lining",
+          "Multiple Pockets",
+          "Stylish"
+        ],
+        "specs": [
+          [
+            "Material",
+            "Polyester"
+          ],
+          [
+            "Sizes",
+            "S-XXL"
+          ],
+          [
+            "Colors",
+            "Multiple"
+          ]
+        ],
+        "paymentOffers": {
+          "creditCard": "10% off up to Rs.750",
+          "debitCard": "5% off up to Rs.400",
+          "upi": "Flat Rs.100 cashback",
+          "cod": "No extra fee"
+        },
+        "imageUrl": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%236d4c41%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3EStylish%20Jacket%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "imageGallery": [
+          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%236d4c41%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3EStylish%20Jacket%3C%2Ftext%3E%3C%2Fsvg%3E"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Running Shoes",
+        "category": "fashion",
+        "price": 2999,
+        "originalPrice": 5999,
+        "rating": 0,
+        "reviews": 0,
+        "stock": "In Stock",
+        "image": "",
+        "description": "Professional running shoes with cushioning technology.",
+        "features": [
+          "Cushioning",
+          "Breathable",
+          "Lightweight",
+          "Ergonomic"
+        ],
+        "specs": [
+          [
+            "Material",
+            "Mesh + Rubber"
+          ],
+          [
+            "Sizes",
+            "5-14"
+          ],
+          [
+            "Colors",
+            "Multiple"
+          ]
+        ],
+        "paymentOffers": {
+          "creditCard": "10% off up to Rs.750",
+          "debitCard": "5% off up to Rs.400",
+          "upi": "Flat Rs.100 cashback",
+          "cod": "No extra fee"
+        },
+        "imageUrl": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23ffa000%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3ERunning%20Shoes%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "imageGallery": [
+          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23ffa000%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3ERunning%20Shoes%3C%2Ftext%3E%3C%2Fsvg%3E"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Non-Stick Cookware Set",
+        "category": "home",
+        "price": 3499,
+        "originalPrice": 7999,
+        "rating": 0,
+        "reviews": 0,
+        "stock": "In Stock",
+        "image": "",
+        "description": "Premium non-stick cookware set with 5 pieces.",
+        "features": [
+          "Non-Stick",
+          "Heat Resistant",
+          "Durable",
+          "Induction Ready"
+        ],
+        "specs": [
+          [
+            "Pieces",
+            "5"
+          ],
+          [
+            "Material",
+            "Aluminum"
+          ],
+          [
+            "Heat Resistance",
+            "400F"
+          ]
+        ],
+        "paymentOffers": {
+          "creditCard": "10% off up to Rs.750",
+          "debitCard": "5% off up to Rs.400",
+          "upi": "Flat Rs.100 cashback",
+          "cod": "No extra fee"
+        },
+        "imageUrl": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23d32f2f%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3ENon-Stick%20Cookware%20Set%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "imageGallery": [
+          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23d32f2f%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3ENon-Stick%20Cookware%20Set%3C%2Ftext%3E%3C%2Fsvg%3E"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Kitchen Knife Set",
+        "category": "home",
+        "price": 999,
+        "originalPrice": 2499,
+        "rating": 0,
+        "reviews": 0,
+        "stock": "In Stock",
+        "image": "",
+        "description": "Professional kitchen knife set with 6 pieces.",
+        "features": [
+          "Stainless Steel",
+          "Sharp Blades",
+          "Comfortable",
+          "Wood Stand Included"
+        ],
+        "specs": [
+          [
+            "Pieces",
+            "6"
+          ],
+          [
+            "Material",
+            "Stainless Steel"
+          ],
+          [
+            "Warranty",
+            "Lifetime"
+          ]
+        ],
+        "paymentOffers": {
+          "creditCard": "10% off up to Rs.750",
+          "debitCard": "5% off up to Rs.400",
+          "upi": "Flat Rs.100 cashback",
+          "cod": "No extra fee"
+        },
+        "imageUrl": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23455a64%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3EKitchen%20Knife%20Set%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "imageGallery": [
+          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23455a64%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3EKitchen%20Knife%20Set%3C%2Ftext%3E%3C%2Fsvg%3E"
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Coffee Maker",
+        "category": "home",
+        "price": 2799,
+        "originalPrice": 5999,
+        "rating": 0,
+        "reviews": 0,
+        "stock": "In Stock",
+        "image": "",
+        "description": "Automatic coffee maker with programmable features.",
+        "features": [
+          "Programmable",
+          "Auto Shut-off",
+          "Keep Warm",
+          "Easy Brewing"
+        ],
+        "specs": [
+          [
+            "Capacity",
+            "1.5L"
+          ],
+          [
+            "Power",
+            "1000W"
+          ],
+          [
+            "Filter",
+            "Reusable"
+          ]
+        ],
+        "paymentOffers": {
+          "creditCard": "10% off up to Rs.750",
+          "debitCard": "5% off up to Rs.400",
+          "upi": "Flat Rs.100 cashback",
+          "cod": "No extra fee"
+        },
+        "imageUrl": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%235d4037%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3ECoffee%20Maker%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "imageGallery": [
+          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%235d4037%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3ECoffee%20Maker%3C%2Ftext%3E%3C%2Fsvg%3E"
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Programming Basics Book",
+        "category": "books",
+        "price": 349,
+        "originalPrice": 599,
+        "rating": 0,
+        "reviews": 0,
+        "stock": "In Stock",
+        "image": "",
+        "description": "Complete guide to programming fundamentals.",
+        "features": [
+          "Easy to Understand",
+          "Practical Examples",
+          "Exercises",
+          "Beginner Friendly"
+        ],
+        "specs": [
+          [
+            "Pages",
+            "450"
+          ],
+          [
+            "Language",
+            "English"
+          ],
+          [
+            "Author",
+            "Tech Academy"
+          ]
+        ],
+        "paymentOffers": {
+          "creditCard": "10% off up to Rs.750",
+          "debitCard": "5% off up to Rs.400",
+          "upi": "Flat Rs.100 cashback",
+          "cod": "No extra fee"
+        },
+        "imageUrl": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23303f9f%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3EProgramming%20Basics%20Book%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "imageGallery": [
+          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23303f9f%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3EProgramming%20Basics%20Book%3C%2Ftext%3E%3C%2Fsvg%3E"
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Web Development Guide",
+        "category": "books",
+        "price": 499,
+        "originalPrice": 899,
+        "rating": 0,
+        "reviews": 0,
+        "stock": "In Stock",
+        "image": "",
+        "description": "Master HTML, CSS, and JavaScript with this comprehensive guide.",
+        "features": [
+          "Complete Coverage",
+          "Project Based",
+          "Code Examples",
+          "Modern"
+        ],
+        "specs": [
+          [
+            "Pages",
+            "600"
+          ],
+          [
+            "Language",
+            "English"
+          ],
+          [
+            "Edition",
+            "3rd"
+          ]
+        ],
+        "paymentOffers": {
+          "creditCard": "10% off up to Rs.750",
+          "debitCard": "5% off up to Rs.400",
+          "upi": "Flat Rs.100 cashback",
+          "cod": "No extra fee"
+        },
+        "imageUrl": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%231976d2%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3EWeb%20Development%20Guide%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "imageGallery": [
+          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%231976d2%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3EWeb%20Development%20Guide%3C%2Ftext%3E%3C%2Fsvg%3E"
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Self-Help Book",
+        "category": "books",
+        "price": 299,
+        "originalPrice": 599,
+        "rating": 0,
+        "reviews": 0,
+        "stock": "In Stock",
+        "image": "",
+        "description": "Transform your life with proven strategies and techniques.",
+        "features": [
+          "Practical Tips",
+          "Life Changing",
+          "Motivational",
+          "Action Plans"
+        ],
+        "specs": [
+          [
+            "Pages",
+            "320"
+          ],
+          [
+            "Language",
+            "English"
+          ],
+          [
+            "Author",
+            "Life Coach"
+          ]
+        ],
+        "paymentOffers": {
+          "creditCard": "10% off up to Rs.750",
+          "debitCard": "5% off up to Rs.400",
+          "upi": "Flat Rs.100 cashback",
+          "cod": "No extra fee"
+        },
+        "imageUrl": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23388e3c%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3ESelf-Help%20Book%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "imageGallery": [
+          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23388e3c%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3ESelf-Help%20Book%3C%2Ftext%3E%3C%2Fsvg%3E"
+        ]
+      },
+      {
+        "name": "Test Uploaded Product",
+        "category": "electronics",
+        "price": 111,
+        "originalPrice": 222,
+        "stock": "In Stock",
+        "image": "",
+        "imageUrl": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%232f77f8%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3ETest%20Uploaded%20Product%3C%2Ftext%3E%3C%2Fsvg%3E",
+        "imageGallery": [
+          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%20height%3D%22500%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%232f77f8%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2252%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Segoe%20UI%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3ETest%20Uploaded%20Product%3C%2Ftext%3E%3C%2Fsvg%3E"
+        ],
+        "description": "Uploaded image preserved",
+        "paymentOffers": {
+          "creditCard": "10% off",
+          "debitCard": "5% off",
+          "upi": "Rs.100 cashback",
+          "cod": "No extra fee"
+        },
+        "features": [
+          "upload-test"
+        ],
+        "specs": [],
+        "rating": 0,
+        "reviews": 0,
+        "updatedAt": "2026-05-19T14:36:24.680Z",
+        "id": 13
+      }
+    ],
+    "updatedAt": "2026-05-19T14:36:24.680Z"
+  },
+  "customers": [
+    {
+      "id": "05730b1b-c5c5-44ca-b788-0ecc00b45451",
+      "firstname": "Demo",
+      "lastname": "User",
+      "email": "demo2@quickpick.com",
+      "phone": "+919876543211",
+      "password": "Test123!",
+      "createdAt": "2026-05-10T16:33:01.550Z"
+    }
+  ],
+  "reviews": {},
+  "orders": [
+    {
+      "id": "#ORD31430447",
+      "date": "10/5/2026",
+      "items": [
+        {
+          "id": 1,
+          "name": "Wireless Bluetooth Headphones",
+          "quantity": 1,
+          "price": 1999
+        }
+      ],
+      "total": "1999",
+      "status": "cancelled",
+      "customerId": "05730b1b-c5c5-44ca-b788-0ecc00b45451",
+      "customerName": "Demo User",
+      "customerEmail": "demo2@quickpick.com",
+      "customerPhone": "+919876543211",
+      "customerCity": "Gorakhpur",
+      "shippingAddress": "Some address",
+      "paymentMethod": "cod",
+      "createdAt": "2026-05-10T16:34:01.398Z",
+      "updatedAt": "2026-05-10T16:34:31.059Z",
+      "cancellationReason": "other",
+      "cancellationDate": "10/5/2026"
+    }
+  ],
+  "sessions": {
+    "seller": {
+      "03cdd07d57103a7ba0e5fe7a12fd56d986b9c5998cf35354": {
+        "sellerName": "Quickpick Store",
+        "createdAt": "2026-05-01T17:31:28.946Z"
+      },
+      "627985eddb5844d66867a27e50e9b4fc2ee572ea21949334": {
+        "sellerName": "Quickpick Store",
+        "createdAt": "2026-05-18T16:49:33.986Z"
+      },
+      "848c2468478a89625b79bf3c020872c4fc8ac496127a34d8": {
+        "sellerName": "Quickpick Store",
+        "createdAt": "2026-05-19T14:27:47.894Z"
+      },
+      "9f92c358647c281edd123b7b9c6fb17f2ac4bafc71fe2a79": {
+        "sellerName": "Quickpick Store",
+        "createdAt": "2026-05-19T14:28:28.857Z"
+      },
+      "d3cd06fd90ad61208a5043fcc115684b6785823b01824c49": {
+        "sellerName": "Quickpick Store",
+        "createdAt": "2026-05-19T14:29:36.120Z"
+      },
+      "b85618fe8346cd42e18d2ea6aac8da2ccb04f616b4bc692d": {
+        "sellerName": "Quickpick Store",
+        "createdAt": "2026-05-19T14:36:24.432Z"
+      }
+    },
+    "customer": {
+      "c90168a32b5cafff5a7e9494d70cfffeb7e7e075d9f3b141": {
+        "customerId": "05730b1b-c5c5-44ca-b788-0ecc00b45451",
+        "createdAt": "2026-05-10T16:33:01.582Z"
+      }
+    }
+  }
+}

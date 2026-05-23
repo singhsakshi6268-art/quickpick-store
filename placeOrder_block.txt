@@ -1,0 +1,393 @@
+function placeOrder() {
+            const selectedPayment = document.querySelector('input[name="payment"]:checked');
+            const agreement = document.getElementById('checkoutAgreement');
+
+            if (!document.getElementById('shippingForm').reportValidity()) {
+                previousCheckoutStep('shipping');
+                return;
+            }
+
+            if (!selectedPayment) {
+                alert('Please choose one payment method to place the order.');
+                return;
+            }
+
+            if (!agreement || !agreement.checked) {
+                alert('Please agree to the terms and conditions before placing the order.');
+                return;
+            }
+
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let cartTotal = document.querySelector('.cart-summary strong')?.textContent || '0';
+            cartTotal = cartTotal.replace('₹', '').replace(',', '').replace('â‚¹', '');
+
+            let order;
+            const currentCustomer = getCurrentCustomer();
+            if (!currentCustomer) {
+                openGuestAccountPage();
+                alert('Please log in or create an account before placing the order.');
+                return;
+            }
+            try {
+                const payload = await appApiRequest('/orders', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        items: cart,
+                        total: cartTotal,
+                        customerId: currentCustomer.id,
+                        customerName:
+                            document.querySelector('input[name="fullname"]')?.value ||
+                            `${currentCustomer.firstname || ''} ${currentCustomer.lastname || ''}`.trim(),
+                        customerEmail:
+                            document.querySelector('#shippingForm input[name="email"]')?.value ||
+                            currentCustomer.email || '',
+                        customerPhone:
+                            document.querySelector('#shippingForm input[name="phone"]')?.value ||
+                            currentCustomer.phone || '',
+                        customerCity:
+                            document.querySelector('input[name="city"]')?.value ||
+                            currentCustomer.defaultCity || '',
+                        shippingAddress:
+                            document.querySelector('input[name="address"]')?.value ||
+                            currentCustomer.defaultAddress ||
+                            'Address not provided',
+                        paymentMethod:
+                            selectedPayment.closest('.payment-option')?.querySelector('label')?.textContent ||
+                            'Not specified'
+                    })
+                }, true);
+                order = payload.order;
+                updateCustomerAccountUI();
+            } catch (error) {
+                alert(error.message || 'Unable to place the order right now.');
+                return;
+            }
+
+            document.getElementById('orderNumber').textContent = order.id;
+
+            try {
+                await sendOrderEmail(order);
+            } catch (error) {
+                console.error('Order email failed', error);
+                alert('Order placed, but the seller email could not be sent right now.');
+            }
+
+            document.getElementById('paymentSection').style.display = 'none';
+            document.getElementById('confirmationSection').style.display = 'block';
+            document.querySelectorAll('.step')[1].classList.remove('active');
+            document.querySelectorAll('.step')[2].classList.add('active');
+
+            localStorage.setItem('cart', '[]');
+            updateCartCount();
+            document.querySelectorAll('.payment-option').forEach(option => option.classList.remove('selected'));
+            if (agreement) {
+                agreement.checked = false;
+            }
+        }
+
+        const SELLER_PREVIEW_MS = 10 * 60 * 1000;
+
+        function shouldUseSellerPreviewImages(data) {
+            const syncTime = new Date(data?.updatedAt).getTime();
+            return Number.isFinite(syncTime) && Date.now() - syncTime <= SELLER_PREVIEW_MS;
+        }
+
+        function normalizeSyncedProducts(data, options = {}) {
+            const incomingProducts = Array.isArray(data?.products) ? data.products : [];
+            if (options.allowSellerImages && shouldUseSellerPreviewImages(data)) {
+                return incomingProducts.map(product => ({ ...product }));
+            }
+            return applyStaticProductImages(incomingProducts);
+        }
+
+        function applyProductSyncData(data, options = {}) {
+            if (!(data && data.products && Array.isArray(data.products))) {
+                return false;
+            }
+
+            const syncTime = new Date(data.updatedAt).getTime() || Date.now();
+            if (syncTime <= lastSyncTime) {
+                return false;
+            }
+
+            lastSyncTime = syncTime;
+            products = normalizeSyncedProducts(data, options);
+
+            const currentPage = document.querySelector('.page.active');
+            if (!currentPage) return true;
+
+            const pageId = currentPage.id;
+            if (pageId === 'products') {
+                displayAllProducts();
+            } else if (pageId === 'home') {
+                displayFeaturedProducts();
+            } else if (pageId === 'productDetail' && window.currentProductId) {
+                const product = products.find(p => p.id === window.currentProductId);
+                if (product) {
+                    document.getElementById('productPrice').textContent = `₹${product.price}`;
+                    document.getElementById('originalPrice').textContent = `₹${product.originalPrice}`;
+                    const discount = Math.round((1 - product.price / product.originalPrice) * 100);
+                    document.getElementById('discount').textContent = `${discount}% OFF`;
+                    const nextGallery = getProductGalleryVisuals(product);
+                    if (nextGallery.length && getGallerySignature(nextGallery) !== getGallerySignature(currentDetailGallery)) {
+                        setDetailGallery(product, { useSnapshot: false });
+                    }
+                } else {
+                    navigateTo('products');
+                }
+            } else if (pageId === 'cart') {
+                updateCartPrices();
+                displayCart();
+            } else if (pageId === 'wishlist') {
+                displayWishlist();
+            }
+
+            return true;
+        }
+
+        function applyStoredProductSnapshot(options = {}) {
+            try {
+                const snapshot = JSON.parse(localStorage.getItem(PRODUCT_SYNC_STORAGE_KEY) || '{}');
+                return applyProductSyncData(snapshot, options);
+            } catch (error) {
+                console.log('Unable to read product sync snapshot:', error);
+                return false;
+            }
+        }
+
+        function setupProductSyncListeners() {
+            if ('BroadcastChannel' in window) {
+                productSyncChannel = new BroadcastChannel('quickpick-product-sync');
+                productSyncChannel.onmessage = async () => {
+                    if (!applyStoredProductSnapshot({ allowSellerImages: true })) {
+                        await syncProductsFromSellerPanel(true);
+                    }
+                };
+            }
+
+            window.addEventListener('storage', async (event) => {
+                if (event.key === PRODUCT_SYNC_STORAGE_KEY) {
+                    if (!applyStoredProductSnapshot({ allowSellerImages: true })) {
+                        await syncProductsFromSellerPanel(true);
+                    }
+                }
+            });
+
+            window.addEventListener('seller-products-updated', async () => {
+                if (!applyStoredProductSnapshot({ allowSellerImages: true })) {
+                    await syncProductsFromSellerPanel(true);
+                }
+            });
+
+            window.addEventListener('focus', () => {
+                const activePage = document.querySelector('.page.active')?.id;
+                syncProductsFromSellerPanel(!(activePage === 'productDetail' && window.currentProductId));
+            });
+
+            document.addEventListener('visibilitychange', () => {
+                if (!document.hidden) {
+                    const activePage = document.querySelector('.page.active')?.id;
+                    syncProductsFromSellerPanel(!(activePage === 'productDetail' && window.currentProductId));
+                }
+            });
+        }
+
+        async function syncProductsFromSellerPanel(force = false) {
+            try {
+                const response = await fetch(`${APP_API_BASE}/products`, { cache: 'no-store' });
+                if (!response.ok) {
+                    throw new Error(`Backend sync failed with status ${response.status}`);
+                }
+
+                const data = await response.json();
+                if (!(data.products && Array.isArray(data.products))) {
+                    return;
+                }
+
+                const normalizedProducts = normalizeSyncedProducts(data);
+
+                // If not forcing, we want to keep the main website (including product detail)
+                // fully up-to-date (name/price/description/features/rating + gallery when seller changes).
+                // But we must NOT re-render the whole product detail DOM in a way that causes flicker.
+                // So, when on product detail:
+                // - Update text fields directly
+                // - Update gallery ONLY if the gallery signature changed
+                // - Update payment + related products
+                // - Do not re-render the main image gallery unless needed
+                if (!force) {
+                    products = normalizedProducts;
+                    updateCartPrices();
+
+                    const activePageId = document.querySelector('.page.active')?.id;
+                    if (activePageId === 'productDetail' && window.currentProductId) {
+                        const product = products.find(p => p.id === window.currentProductId);
+                        if (product) {
+                            // --- pricing ---
+                            const productPriceEl = document.getElementById('productPrice');
+                            if (productPriceEl) productPriceEl.textContent = `₹${product.price}`;
+
+                            const originalPriceEl = document.getElementById('originalPrice');
+                            if (originalPriceEl) originalPriceEl.textContent = `₹${product.originalPrice}`;
+
+                            const discount = Math.round((1 - product.price / product.originalPrice) * 100);
+                            const discountEl = document.getElementById('discount');
+                            if (discountEl) discountEl.textContent = `${discount}% OFF`;
+
+                            // --- name (optional, for completeness) ---
+                            const productNameEl = document.getElementById('productName');
+                            if (productNameEl) productNameEl.textContent = product.name;
+                            const breadcrumbEl = document.getElementById('breadcrumbName');
+                            if (breadcrumbEl) breadcrumbEl.textContent = product.name;
+
+                            // --- stock status ---
+                            const stockEl = document.getElementById('stock');
+                            if (stockEl) {
+                                const stockStatus = product.stock || 'In Stock';
+                                stockEl.className = '';
+                                if (stockStatus === 'Out Of Stock') {
+                                    stockEl.classList.add('out-of-stock');
+                                    stockEl.textContent = '✗ Out Of Stock';
+                                } else if (stockStatus === 'In Stock') {
+                                    stockEl.classList.add('in-stock');
+                                    stockEl.textContent = '✓ In Stock';
+                                } else {
+                                    stockEl.classList.add('stock-other');
+                                    stockEl.textContent = `⚠ ${stockStatus}`;
+                                }
+                            }
+
+                            // --- description ---
+                            const descriptionEl = document.getElementById('description');
+                            if (descriptionEl) descriptionEl.textContent = product.description || '';
+
+                            // --- features ---
+                            const featuresEl = document.getElementById('features');
+                            if (featuresEl && Array.isArray(product.features)) {
+                                featuresEl.innerHTML = '';
+                                product.features.forEach(feature => {
+                                    const li = document.createElement('li');
+                                    li.textContent = feature;
+                                    featuresEl.appendChild(li);
+                                });
+                            }
+
+                            // --- ratings/reviews + summary ---
+                            const stars = document.getElementById('stars');
+                            if (stars) stars.textContent = '⭐'.repeat(Math.floor(product.rating || 0));
+
+                            const ratingText = document.getElementById('ratingText');
+                            if (ratingText) ratingText.textContent = `(${product.reviews || 0} reviews)`;
+
+                            const detailStars = document.getElementById('detailStars');
+                            if (detailStars) detailStars.textContent = '⭐'.repeat(Math.floor(product.rating || 0));
+
+                            const detailRatingScore = document.getElementById('detailRatingScore');
+                            if (detailRatingScore) detailRatingScore.textContent = (Number(product.rating) || 0).toFixed(1);
+
+                            const detailReviewsCount = document.getElementById('detailReviewsCount');
+                            if (detailReviewsCount) detailReviewsCount.textContent = `(${product.reviews || 0} customer reviews)`;
+
+                            const detailReviewSummary = document.getElementById('detailReviewSummary');
+                            if (detailReviewSummary) {
+                                let reviewSummary = '';
+                                if ((product.rating || 0) >= 5) reviewSummary = '⭐ Excellent! Highly recommended by customers worldwide!';
+                                else if ((product.rating || 0) >= 4) reviewSummary = '⭐ Very Good! Most customers are satisfied with this product.';
+                                else if ((product.rating || 0) >= 3) reviewSummary = '⭐ Good! Average customer satisfaction. Read reviews for details.';
+                                else if ((product.rating || 0) >= 2) reviewSummary = '⭐ Fair! Some customers have mixed reviews. Consider before buying.';
+                                else reviewSummary = '⭐ Low ratings. Check detailed reviews before purchasing.';
+                                detailReviewSummary.textContent = reviewSummary;
+                            }
+
+                            // --- gallery images ---
+                            const nextGallery = getProductGalleryVisuals(product);
+                            if (nextGallery.length && getGallerySignature(nextGallery) !== getGallerySignature(currentDetailGallery)) {
+                                // Only rebuild gallery thumbnails + update main image if gallery changed.
+                                setDetailGallery(product, { useSnapshot: false });
+                            }
+
+                            // --- payments & related ---
+                            renderProductPaymentOptions(product);
+                            renderRelatedProducts(product);
+
+                            // Reviews list is fetched separately by user actions; don't force reload here.
+                        }
+                    }
+
+                    return;
+                }
+
+                applyProductSyncData({ ...data, updatedAt: new Date().toISOString() });
+            } catch (error) {
+                console.log('Error syncing products:', error);
+                applyStoredProductSnapshot({ allowSellerImages: true });
+            }
+        }
+
+        async function fetchOrders() {
+            const payload = await appApiRequest('/orders', {}, true);
+            ordersState = Array.isArray(payload.orders) ? payload.orders : [];
+            return ordersState;
+        }
+
+        async function displayOrders() {
+            navigateTo('orders');
+            // Rehydrate from backend session so it works in newly opened tabs too.
+            await restoreCustomerSession(true);
+            await filterOrders('all');
+        }
+
+        async function filterOrders(status, button) {
+            let orders = [];
+            try {
+                orders = await fetchOrders();
+            } catch (error) {
+                if (error.message.includes('log in')) {
+                    openGuestAccountPage();
+                }
+            }
+
+            const container = document.getElementById('ordersContainer');
+            container.innerHTML = '';
+            document.querySelectorAll('.order-tab-btn').forEach(btn => btn.classList.remove('active'));
+            if (button) button.classList.add('active');
+
+            let filteredOrders = orders;
+            if (status !== 'all') {
+                filteredOrders = orders.filter(order => order.status === status);
+            }
+
+            if (filteredOrders.length === 0) {
+                container.innerHTML = `
+                    <div class="no-order-message">
+                        <h2>No ${status !== 'all' ? status : ''} orders found</h2>
+                        <p>Start shopping to place your first order!</p>
+                        <button class="btn btn-primary" style="margin-top: 15px;" onclick="navigateTo('products')">Continue Shopping</button>
+                    </div>
+                `;
+                return;
+            }
+
+            filteredOrders.forEach(order => {
+                const orderDiv = document.createElement('div');
+                orderDiv.className = 'order-item';
+                const statusBadge = `<span class="order-status status-${order.status}">${order.status.charAt(0).toUpperCase() + order.status.slice(1)}</span>`;
+                const productsHTML = order.items.map(item => `
+                    <div class="order-product-item">
+                        <div class="product-detail">
+                            <span>${item.name}</span>
+                            <span style="color: #999;">x${item.quantity}</span>
+                        </div>
+                        <span>₹${(item.price * item.quantity).toLocaleString('en-IN')}</span>
+                    </div>
+                `).join('');
+
+                orderDiv.innerHTML = `
+                    <div>
+                        <div class="order-header">
+                            <div>
+                                <div class="order-id">${order.id}</div>
+                                <div class="order-date">Placed on ${order.date}</div>
+                            </div>
+                            ${statusBadge}
+                        </div>
+                        <div class="order-products">$
